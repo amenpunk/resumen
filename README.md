@@ -115,7 +115,7 @@ disminuir su tiempo de ejecucion modificando su diseño
 ## Cuales son las reglas de optimizacion algebraicas de de consultas
 * conmutatividad /Asociatividad
 * bajar la selecciones(Reduce el numero de tuplas)
-* bajar las proyecciones(reduce el tamaño=
+* bajar las proyecciones(reduce el tamaño)
 * eliminar subconsultas de las condiciones
 
 ## Cuales son las causas princiapes de una respuesta pobre?
@@ -124,3 +124,36 @@ disminuir su tiempo de ejecucion modificando su diseño
 * 20% diseño
 * 17.5 Base de datos
 * 2.5 Sistema*
+
+## Como calcular el coste de una consulta
+
+El optimizador se base en las estadisticas almacenadas en el catalogo de oracele,
+atravez de instrucciones
+
+``` sql
+
+ANALYZE [TABLE,INDEX]***[COMPUTE.ESTIMATE] STATISTICS;
+
+```
+
+## Normas básicas de optimizacion 
+
+* Las condiciones; tanto de filtro como de join deben ir en el orden que esta definido el indice.
+* Al crear restricciones de tipo PRIMARY KEY o unice se crea automaticamente un idnice sobre esa columna
+* Para chequeos, es siempre mejor crear restricciones (Constraints) que (triggers)
+* se deben optimizar dos tipos de instrucciones: las que consumen mucho timpo de ejeuccion o se ejeutan muchas veces
+* generar un plan para todas las consultas de la aplicacion.
+* si una palicacion que era rapida se vuelve lenta hay que analizar los factores que pudieron cambiar 
+* utiliza siempre las mismas consultas ya que se ahorrara tiempo de parsing.
+* las consultas mas usadas deben volverse procedimientos almacenados
+* los filtros de las consultas deben ser lo mas especificos posible
+* no se deben lanzar consultas de forma repetida o en forma de ciclo
+* evitar condiciones IN en " SELECT ", sustituyendolas por joins
+* No meter un select dentro de un IN
+* Cuando se hace una consulta multitabla el orde en que se pone el from infule el plan de ejecucion
+* Si en la cláusula where se utiliza campos indexados como argumentos de funciones, el indice quedara desactivado.
+* Evitar las funciones de conversion de tipo de datos 
+* una condicion negada con "NOT" desactiva los indices
+* una consulta que utiliza la cláusula dinsctin debe ser ordenada
+* Desactivar los indicies si se va realizar una operacion masiva de borrado, insercion o actualizacion.
+

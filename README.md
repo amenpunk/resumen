@@ -70,6 +70,7 @@ es una herramienta de extraccion y transforamacion de l ainromafion para luego
 ser cargada en un data warehouse
 
 ## De que fomras peude existir un data warehouse
+
 * Esquema de estrella.
 * Esquema de copo de nieve.
 * Constelaciond e hechos.
@@ -94,15 +95,25 @@ para  es la especificación de la logica de intercambio de informacion entre apl
 Es un sistema de soporte para la de descisiones, es una heramienta de bussines intelligence 
 enfoada al analis de los datos de la organizacion.
 entre sus caracteristicas podemos encontrar:
+
 * informes dinamicos
 * no requiere conocimientos previos
 * no requiere conocimientos tecnicos
 * rapidez en tiempo de respuesta
 
 ## Que tipos de DSS podemos encontra
+
 * Sistemas de informacion gerencial
 * sistema de informacion ejecutiva
 * sistemas expertos basados en inteligencia artifical
 * sistemas de apoyo a la deciones de grupo
 
+## Cuale es el finde la optimizacion de consultas
 
+disminuir su tiempo de ejecucion modificando su diseño
+
+## Cuales son las reglas de optimizacion algebraicas de de consultas
+* conmutatividad /Asociatividad
+* bajar la selecciones(Reduce el numero de tuplas)
+* bajar las proyecciones(reduce el tamaño=
+* eliminar subconsultas de las condiciones

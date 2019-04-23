@@ -1,4 +1,4 @@
-# Resume bases
+# Resumen BDD2
 
 ## Principio de OLAP (ON LINE ANALYTIC PROCESSING)
 
@@ -19,15 +19,15 @@ diversas, normalmente multidimensionales (o Cubos OLAP)
 
 esta base de datos tiene dos niveles y su motor es una base 
 de datos multidimiensional y un motor analitico
-->estructura optimizada para maximizar las consultas.
-->apropiado para cubos de rapida respuesta
+**** iestructura optimizada para maximizar las consultas.
+******* apropiado para cubos de rapida respuesta
 
 ## ROLAP
 
 esta base da datos tiene 3 nivele y funcional por medio de un datawarehouse
 cabe mencionar que este sistema es relacional
-->es la mas lenta de todas
-->su uso mas frecuente es cuando contamos con grandes conjutos de datos
+******* es la mas lenta de todas
+* su uso mas frecuente es cuando contamos con grandes conjutos de datos
 que no son frecuentemente buscados.
 
 ## HOLAP
@@ -71,19 +71,19 @@ es una herramienta de extraccion y transforamacion de l ainromafion para luego
 ser cargada en un data warehouse
 
 ## De que fomras peude existir un data warehouse
--> Esquema de estrella.
--> Esquema de copo de nieve.
--> Constelaciond e hechos.
+* Esquema de estrella.
+* Esquema de copo de nieve.
+* Constelaciond e hechos.
 
 ## Que tipo de operaciones se pueden realizar con DataWarehouse?
 
-->  Roll up: permite escalar la jerarquia o reducir dimensiones generalizados
-->  Drill down: permite ir desde un alto nivel de resume a nu nuvel de datos mas detallado.
-->  Slice : permite hacer un corte o proyeccicon
-->  Dice: permite seleccionar
-->  Pivot permite girar el cubo
+* Roll up: permite escalar la jerarquia o reducir dimensiones generalizados
+* Drill down: permite ir desde un alto nivel de resume a nu nuvel de datos mas detallado.
+* Slice : permite hacer un corte o proyeccicon
+* Dice: permite seleccionar
+* Pivot permite girar el cubo
 
 ## cuales son los metodos de accesos a las BDMD
-->Arboles b,Tabalas de hash
+* Arboles b,Tabalas de hash
 
 ## Que es un DDS

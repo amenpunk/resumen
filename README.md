@@ -117,3 +117,10 @@ disminuir su tiempo de ejecucion modificando su diseño
 * bajar la selecciones(Reduce el numero de tuplas)
 * bajar las proyecciones(reduce el tamaño=
 * eliminar subconsultas de las condiciones
+
+## Cuales son las causas princiapes de una respuesta pobre?
+
+* 60% programacion
+* 20% diseño
+* 17.5 Base de datos
+* 2.5 Sistema*

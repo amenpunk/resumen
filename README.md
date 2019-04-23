@@ -18,15 +18,14 @@ diversas, normalmente multidimensionales (o Cubos OLAP)
 ## MOLAP
 
 esta base de datos tiene dos niveles y su motor es una base 
-de datos multidimiensional y un motor analitico
-**** iestructura optimizada para maximizar las consultas.
-******* apropiado para cubos de rapida respuesta
+de datos multidimiensional y un motor analitico* su estructura optimizada para maximizar las consultas.
+y es apropiado para cubos de rapida respuesta
 
 ## ROLAP
 
 esta base da datos tiene 3 nivele y funcional por medio de un datawarehouse
-cabe mencionar que este sistema es relacional
-******* es la mas lenta de todas
+cabe mencionar que este sistema es relaciona
+* es la mas lenta de todas
 * su uso mas frecuente es cuando contamos con grandes conjutos de datos
 que no son frecuentemente buscados.
 
@@ -87,3 +86,23 @@ ser cargada en un data warehouse
 * Arboles b,Tabalas de hash
 
 ## Que es un DDS
+Es un Servicio de Distribución de Datos para sistemas en tiempo real es un estandar
+para  es la especificación de la logica de intercambio de informacion entre aplicaciones.
+
+## Que es un DSS
+
+Es un sistema de soporte para la de descisiones, es una heramienta de bussines intelligence 
+enfoada al analis de los datos de la organizacion.
+entre sus caracteristicas podemos encontrar:
+* informes dinamicos
+* no requiere conocimientos previos
+* no requiere conocimientos tecnicos
+* rapidez en tiempo de respuesta
+
+## Que tipos de DSS podemos encontra
+* Sistemas de informacion gerencial
+* sistema de informacion ejecutiva
+* sistemas expertos basados en inteligencia artifical
+* sistemas de apoyo a la deciones de grupo
+
+

@@ -157,3 +157,22 @@ ANALYZE [TABLE,INDEX][COMPUTE,ESTIMATE] STATISTICS;
 * una consulta que utiliza la cláusula dinsctin debe ser ordenada
 * Desactivar los indicies si se va realizar una operacion masiva de borrado, insercion o actualizacion.
 
+
+## 15 Consejos para optimizar Consultas SQL
+
+* Se debe tener cuidado con la creacion de indices ya que estos pueden optimizar o empeorar la DB
+* La manera en que usamos os simbolos operacionales afeca la consulta
+* Hacer buen uso del comodin "%"  en un "LIKE"
+* Utilizar "EXISTS" en vez de "COUNT"
+* Es mejor utilzar "palabra%" que el un string del tipo "Substr(columnda,1,1)"
+* Algunas bases de datos buscan mejor si hay columnas unicas y indexadas 
+* Usar las funciones "MAX Y MIN" preferiblemente en conlumnas indexadas"
+* Se deben utilizar los tipos de datos mas eficientes "pequeños" que sean posibles
+* la columna que se utiliza para un indexado debe ser la mas corta posible.
+* No es necesario indexar una cadena cuando en su lugar se pueden indexar un prefijo o sufijo
+* Tratar de que la consulta retorne el menor numero de registros posibles
+* En bases de datos como MYSQL o Oracle utilizar es recomendable utilizar los valores por defecto
+* Nunca utilizar un subquery en un IN
+* Utilizar "UNION" en vez de "OR"
+ 
+

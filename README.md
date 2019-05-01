@@ -9,7 +9,7 @@ y lleva un historial de ellos:
 
 ## Que es OLAP
 
-procesamiento analitico en linea, su objetivo es 
+Procesamiento analitico en linea, su objetivo es 
 agilizar la consulta de grandes cantidades de datos
 Para ello utiliza estructuras de datos 
 diversas, normalmente multidimensionales (o Cubos OLAP)
@@ -17,46 +17,46 @@ diversas, normalmente multidimensionales (o Cubos OLAP)
 
 ## MOLAP
 
-esta base de datos tiene dos niveles y su motor es una base 
+Esta base de datos tiene dos niveles y su motor es una base 
 de datos multidimiensional y un motor analitico* su estructura optimizada para maximizar las consultas.
 y es apropiado para cubos de rapida respuesta
 
 ## ROLAP
 
-esta base da datos tiene 3 nivele y funcional por medio de un datawarehouse
-cabe mencionar que este sistema es relaciona
-* es la mas lenta de todas
-* su uso mas frecuente es cuando contamos con grandes conjutos de datos
+Esta base da datos tiene 3 niveles y funciona por medio de un datawarehouse
+cabe mencionar que este sistema es relacional
+* Es la mas lenta de todas
+* Su uso mas frecuente es cuando contamos con grandes conjutos de datos
 que no son frecuentemente buscados.
 
 ## HOLAP
 
-es un hibrido entre ROLAP Y MOLAP 
+Es un hibrido entre ROLAP Y MOLAP 
 
 
 ## MOLAP
 
-este tambien es relacional, maneja volumenes mas grandes de 
+Requiere un preprocesamiento y almacenamiento de la información contenida en el cubo OLAP
 
-## Que es bussinss Inteligence.
+## Que es Bussinss Inteligence.
 
 es la habildad de transformar los datos en informacion y 
 la informacion en conocimiento
 
 ## Que es OLTP
-Procesamiento de Transacciones En Línea 
+Procesamiento de transacciones en línea 
 es utilizado en las bases de datos relacionales pero es lento
 en consultas multitabla
 
 ## DATA MART
 
-es un subconjunto de datos en toda la empresa qu ees de valor para un grupo especifico de 
+Es un subconjunto de datos en toda la empresa que es de valor para un grupo especifico de 
 usuarios. Por ejemplo el data mart de marketing.
 
 El abordaje mas popular para el diseño de datawahrehouse es del modelo multidimensional
 Este modelo puede existir en forma de esquema de estrella, esquema de copo de nieve, constelacion de echos.
 
-## que son las bases de datos multidimensionales
+## Que son las bases de datos multidimensionales
 
 Las bases de datos multidimensionales (BDMB) son un tipo de base de
 datos optimizada para Data Warehouse que se utilizan principalmente 
@@ -66,7 +66,7 @@ DBMS esta optimizado para OLTP Y OLAP esta optimizado para data waarehouse
 
 ## ETL 
 
-es una herramienta de extraccion y transforamacion de l ainromafion para luego
+Es una herramienta de extraccion y transforamacion de la informacion para luego
 ser cargada en un data warehouse
 
 ## De que fomras peude existir un data warehouse
@@ -87,7 +87,7 @@ ser cargada en un data warehouse
 * Arboles b,Tabalas de hash
 
 ## Que es un DDS
-Es un Servicio de Distribución de Datos para sistemas en tiempo real es un estandar
+Es un Servicio de Distribución de Datos para sistemas en tiempo real, Es un estandar
 para  es la especificación de la logica de intercambio de informacion entre aplicaciones.
 
 ## Que es un DSS
@@ -96,29 +96,29 @@ Es un sistema de soporte para la de descisiones, es una heramienta de bussines i
 enfoada al analis de los datos de la organizacion.
 entre sus caracteristicas podemos encontrar:
 
-* informes dinamicos
-* no requiere conocimientos previos
-* no requiere conocimientos tecnicos
-* rapidez en tiempo de respuesta
+* Informes dinamicos
+* No requiere conocimientos previos
+* No requiere conocimientos tecnicos
+* Rapidez en tiempo de respuesta
 
 ## Que tipos de DSS podemos encontra
 
 * Sistemas de informacion gerencial
-* sistema de informacion ejecutiva
-* sistemas expertos basados en inteligencia artifical
-* sistemas de apoyo a la deciones de grupo
+* Sistema de informacion ejecutiva
+* Sistemas expertos basados en inteligencia artifical
+* Sistemas de apoyo a la deciones de grupo
 
-## Cuale es el finde la optimizacion de consultas
+## Cual es el finde de la optimizacion de consultas
 
-disminuir su tiempo de ejecucion modificando su diseño
+Disminuir su tiempo de ejecucion modificando su diseño
 
 ## Cuales son las reglas de optimizacion algebraicas de de consultas
-* conmutatividad /Asociatividad
-* bajar la selecciones(Reduce el numero de tuplas)
-* bajar las proyecciones(reduce el tamaño)
-* eliminar subconsultas de las condiciones
+* Conmutatividad /Asociatividad
+* Bajar la selecciones(Reduce el numero de tuplas)
+* Bajar las proyecciones(reduce el tamaño)
+* Eliminar subconsultas de las condiciones
 
-## Cuales son las causas princiapes de una respuesta pobre?
+## Cuales son las causas principales de una respuesta pobre?
 
 * 60% programacion
 * 20% diseño
@@ -127,7 +127,7 @@ disminuir su tiempo de ejecucion modificando su diseño
 
 ## Como calcular el coste de una consulta
 
-El optimizador se base en las estadisticas almacenadas en el catalogo de oracele,
+El optimizador se base en las estadisticas almacenadas en el catalogo de oracle,
 atravez de instrucciones
 
 ``` sql

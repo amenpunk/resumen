@@ -50,7 +50,7 @@ en consultas multitabla
 
 ## DATA MART
 
-Es un subconjunto de datos en toda la empresa que es de valor para un grupo especifico de 
+Es un subconjunto de datos de toda la empresa que es de valor para un grupo especifico de 
 usuarios. Por ejemplo el data mart de marketing.
 
 El abordaje mas popular para el diseño de datawahrehouse es del modelo multidimensional
@@ -69,16 +69,16 @@ DBMS esta optimizado para OLTP Y OLAP esta optimizado para data waarehouse
 Es una herramienta de extraccion y transforamacion de la informacion para luego
 ser cargada en un data warehouse
 
-## De que fomras peude existir un data warehouse
+## De que formas puede existir un data warehouse
 
 * Esquema de estrella.
 * Esquema de copo de nieve.
-* Constelaciond e hechos.
+* Constelacion de hechos.
 
 ## Que tipo de operaciones se pueden realizar con DataWarehouse?
 
 * Roll up: permite escalar la jerarquia o reducir dimensiones generalizados
-* Drill down: permite ir desde un alto nivel de resume a nu nuvel de datos mas detallado.
+* Drill down: permite ir desde un alto nivel de resume a un nivel de datos mas detallado.
 * Slice : permite hacer un corte o proyeccicon
 * Dice: permite seleccionar
 * Pivot permite girar el cubo
@@ -161,18 +161,52 @@ ANALYZE [TABLE,INDEX][COMPUTE,ESTIMATE] STATISTICS;
 ## 15 Consejos para optimizar Consultas SQL
 
 * Se debe tener cuidado con la creacion de indices ya que estos pueden optimizar o empeorar la DB
-* La manera en que usamos os simbolos operacionales afeca la consulta
+* La manera en que usamos los simbolos operacionales afeca la consulta
 * Hacer buen uso del comodin "%"  en un "LIKE"
 * Utilizar "EXISTS" en vez de "COUNT"
-* Es mejor utilzar "palabra%" que el un string del tipo "Substr(columnda,1,1)"
+* Es mejor utilzar "palabra%" que un string del tipo "Substr(columnda,1,1)"
 * Algunas bases de datos buscan mejor si hay columnas unicas y indexadas 
 * Usar las funciones "MAX Y MIN" preferiblemente en conlumnas indexadas"
 * Se deben utilizar los tipos de datos mas eficientes "pequeños" que sean posibles
 * la columna que se utiliza para un indexado debe ser la mas corta posible.
 * No es necesario indexar una cadena cuando en su lugar se pueden indexar un prefijo o sufijo
 * Tratar de que la consulta retorne el menor numero de registros posibles
-* En bases de datos como MYSQL o Oracle utilizar es recomendable utilizar los valores por defecto
+* En bases de datos como MYSQL o Oracle es recomendable utilizar los valores por defecto
 * Nunca utilizar un subquery en un IN
 * Utilizar "UNION" en vez de "OR"
  
+## Que tipos de enfoques tiene el control de acceso a BD
+* Control de acceso discrecional
+* Control de acceso obligatorio 
+
+## Que es el control de acceso Discrecional
+
+Garantiza privilegios a usuarios, incluyendo la capacidad para acceder archivos de datos especificos para operar de una manera determinada
+
+## Que es el control obligatorio
+Clasifica usuarios y datos en multiples niveles de seguridad
+
+## Que tipos de clases de seguridad existen
+* Top Secret (TS)
+* Secret (S)
+* Confidential (C)
+* Unclassified (U)
+
+## Que son los estandares ISO/IEC, 27001, SOX, Cobit, Itil
+Son estandares para la seguridad y clasificacion de los datos
+
+## Que tipos de autenticacion existen en oracle
+* Mediante Password
+* Externa
+* Global
+
+## Cuales son las sentencias SQL para dar privilegios?
+* Grant (otorga privilegios)
+* Revoke (quita privilegios)
+
+``` sql
+GRANT SELECT ON tabla_alumnos TO byron
+REVOKE ALL ON tabla_usuarios FROM byron
+
+```
 

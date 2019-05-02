@@ -18,7 +18,7 @@ diversas, normalmente multidimensionales (o Cubos OLAP)
 ## MOLAP
 
 Esta base de datos tiene dos niveles y su motor es una base 
-de datos multidimiensional y un motor analitico* su estructura optimizada para maximizar las consultas.
+de datos multidimiensional y un motor analitico su estructura optimizada para maximizar las consultas.
 y es apropiado para cubos de rapida respuesta
 
 ## ROLAP
@@ -253,5 +253,5 @@ Es aquella que involucra algún proces en distintos sitios de la red, existe un 
 Es un protocolo de las bases de datos distribuidas en el que un sitio o agente llamado cordinador es el responsable de tomar la decision de hacer un commit o un rollback global y cada participante es responsable de grabar a sus bitacoras y bases de datos globales 
 
 ## Cuales son las fases del commit
-* La primera fasetiene como objetivo lograr una desicion común
+* La primera fase tiene como objetivo lograr una desicion común
 * La segunda fase es llevar a cabo esta decision.

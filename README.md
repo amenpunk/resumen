@@ -209,4 +209,32 @@ GRANT SELECT ON tabla_alumnos TO byron
 REVOKE ALL ON tabla_usuarios FROM byron
 
 ```
+## Que son las 12 reglas de cod
+Son un conjunto de reglas para determinar si un SGBD es relacional
+
+1.  Informacion: 
+* Todos los datos deben estar almacenados en tablas.
+2.  Acceso garantizado: 
+* Cualquier dato es accesible sabiendo el nombre de su fila y el nombre de su columna o atributo
+3.  Tratamiento sistematico de los valores nulos: 
+* El SGDB debe soportar valores nulos.
+4.  Catálogo en línea relacional: 
+* Se debe poder obtener el diccionario de datos y consultarlo con las mismas instruccioens SELECT
+5.  Sublenguaje de datos completo: 
+* No puede haber funciones fuera de un mismo lenguaje.
+6.  Vistas actualizadas: 
+* las vistas deben mostrar la infomacion actualizada.
+7.  Inserciones,modificaciones y eliminaciones de alto nivel: 
+* Esto implica que el lenguaje de manipulacion de datos trabaje con un conjunto de filas a la vez.
+8.  Independencia Física: 
+* El acceso a los elementos logicos de la DB no deben cambiar porque la DB fisica cambie.
+9.  Independencia Lógica: 
+* Si cambia el nombre de la tabla o la columna que modificamos esto no debe afectar el esquema externo.
+10. Independencia de integridad: 
+* Las reglas de integridad deben ser gestionadas y almacenadas por el SGBD.
+11. Independencia de distribucion: 
+* El esquema logico debe ser el mismo independientemente de si la DB es distribuida o no.
+12. No subversión: 
+* La DB no debe permitir que exista un lenguaje que permita saltarse las reglas anteriores.
+
 

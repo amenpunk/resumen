@@ -237,4 +237,21 @@ Son un conjunto de reglas para determinar si un SGBD es relacional
 12. No subversión: 
 * La DB no debe permitir que exista un lenguaje que permita saltarse las reglas anteriores.
 
+## Que son las bases de datos distribuidas.
+Este se compone por un conjunto de sitios conectados entre sí mediante algun tipo de red de comunicacion en el cual cada sitio es un un sistema de DB en si mismo y los sitios trabajan como  si todos los datos estuvieran almacenados en el sitio propio del usuario.
 
+## Que es la fragmentacion de BD
+Es la descomposicion o particion de una tabla en pedazos llamados fragmentos y esta se puede dar de dos formas:
+* Fragmentacion Horizontal(Selecciona registros completos de una relacion).
+* Fragmentacion Vertical(Selecciona columnas completas de una relacion).
+
+## Transacciones distribuidas
+Es aquella que involucra algún proces en distintos sitios de la red, existe un agente raiz que inicia toda la transaccion y este sitio raiz es llamado sitio de origin de la transaccion y este es el encargado de asegurar BEGIN-TRANSACTION, COMMIT O ROLLBACK de toda la transaccion distriubida
+
+## Commit de 2 fases
+
+Es un protocolo de las bases de datos distribuidas en el que un sitio o agente llamado cordinador es el responsable de tomar la decision de hacer un commit o un rollback global y cada participante es responsable de grabar a sus bitacoras y bases de datos globales 
+
+## Cuales son las fases del commit
+* La primera fasetiene como objetivo lograr una desicion común
+* La segunda fase es llevar a cabo esta decision.

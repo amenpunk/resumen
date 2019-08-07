@@ -2,7 +2,7 @@ Diagramas a memorizar:
 * OSI
 * Clase de ipv4 Privdadas(Ip inicial, Ip Final)
 
-![](https://www.google.fi/url?sa=i&source=images&cd=&ved=2ahUKEwi0k83I3fHjAhXBx1kKHUuRCroQjRx6BAgBEAQ&url=http%3A%2F%2Falejollagua.blogspot.com%2F2012%2F12%2Fnube-dispositivo-de-capa-1-7.html&psig=AOvVaw2mH1NvoUA_p-t8W1Qf0CFF&ust=1565300673746883)
+![Equipos Segun Sus Capas](https://www.google.fi/url?sa=i&source=images&cd=&ved=2ahUKEwi0k83I3fHjAhXBx1kKHUuRCroQjRx6BAgBEAQ&url=http%3A%2F%2Falejollagua.blogspot.com%2F2012%2F12%2Fnube-dispositivo-de-capa-1-7.html&psig=AOvVaw2mH1NvoUA_p-t8W1Qf0CFF&ust=1565300673746883)
 
 # Redes Modulo 1
 

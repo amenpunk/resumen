@@ -2,11 +2,25 @@ Diagramas a memorizar:
 * OSI
 * Clase de ipv4 Privdadas(Ip inicial, Ip Final)
 
+![Modelo Osi y TCP/IP](http://cidecame.uaeh.edu.mx/lcc/mapa/PROYECTO/libro27/osivstcp.jpg)
+
 ![Equipos Segun Sus Capas](http://1.bp.blogspot.com/-DVhjn9HWuNg/UMU_ggzc6oI/AAAAAAAAAJ8/_qS4xv0mjuE/s320/dispositivos+de+los+dispositivos.GIF)
 
+# Componentes segun su capa
+* Capa 3: Router
+* Capa 2: Bridge(puente),Swich,Conmutador
+* Capa 1: Repetidor, Hub
 
 # Redes Modulo 1
 
+# Dispositivos que no propagan el dominio de colision
+* Puentes
+* Switches
+* Routes
+
+# Dispositivos que propagan el dominio de colision
+* Repetidores
+* Hubs
 
 ## Link (enlace)
 Es el nivel más bajo de una red consiste dos o mas computadoras conectadas travéz de un medio fisico.

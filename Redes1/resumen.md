@@ -86,6 +86,9 @@ La capa Física y la de enlace de datos son las que conforman ethernet.
 ## Direccion MAC (Control de acceso al medio)
 Es el encargado de la encapsulacion de los datos, delimitacion de tramas, direccionamiento y deteccion de errores.
 
+## Como esta compuesta una MAC
+por el dentificador único de organización o organizationally unique identifier (OUI), y Network interface controller (NIC)
+
 ## CSMA/CD (Carrier Sense Multiple Acces / Colision Detect)
 Es un protocolo que permite Oir antes de hablar y hablar solo cuando los demas callan,
 si mientras habalmos oimos que otro habla nos callamos este funciona en redes Ethernet su variante es CSMA/CA para redes inalambricas,este en si regula el control de acceso al medio compartido.
@@ -123,6 +126,8 @@ Es un protocolo de la capa de red no orientado a conexión, el emisior no sabe s
 
 ## Unidad de datos de protocolo(PDU)
 Las unidades de protocolo de datos, también llamadas PDU (del inglés Protocol Data Unit), se utilizan para el intercambio de datos entre unidades disparejas, dentro de una capa del modelo OSI. 
+
+![IP Clases*](http://4.bp.blogspot.com/-EQ7HFk4H6I0/UMUm4aGxHkI/AAAAAAAAAIc/n3glh0AFhUM/s1600/clases+ip.jpg)
 
 ## Ip clase A
 Los primeros 8 bits representan la red, los restantes 24 representan el host

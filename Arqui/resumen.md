@@ -11,12 +11,12 @@ Ejemplo A4FB:4872
 
 ## Segmentacion de la memoria fisica y sus registros de desplazamiento en 8086
 
-_| Registros de segmeto    | Registros de proposito general (Offset)    |
-|-------------------------|--------------------------------------------| 
-| Segmento de codigo (CS) | IP (Instruccion Pointer)                   |
-| Segmento de data (DS)   | SI (Source Index)                          |   
-| Segmento de stack(SS)   | SP,BP (Stack, base Pointer)                | 
-| Segmento extra(ES)      | DI (Destination index)                     |
+| Registros de segmento   | Registros de proposito general(Offset) |
+|-------------------------|:--------------------------------------:|
+| Segmento de codigo (CS) |        IP (Instruccion Pointer)        |
+| Segmento de data(DS)    |            SI(Source Index)            |
+| Segmento de stack(SS)   |              right-aligned             |
+| Segmento extra(ES)      | DI(destination Index)                  |
 
 ## Caracteristicas del 8086
 * Procesador de 16 bits

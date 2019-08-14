@@ -5,11 +5,17 @@
  Es un grupo de registros direccionable atravez del bus de direcciones mediante el cual el procesador coloca una direccion para poder acceder a ella 
 ## Segmentacion de la memoria
 Se refiere al manejo de bloques de tamaño variable en memoria virtual y la conversión de estos segmentos a memoria real.  
+esta se compone de la siguiente manera:
+Segmento:Desplazamiento
+Ejemplo A4FB:4872
 
 ## Segmentacion de la memoria fisica y sus registros de desplazamiento en 8086
+
+Registros de segmeto      :| Registros de proposito general (Offset)
+________________________________________________________________
 * Segmento de codigo (CS) -- IP (Instruccion Pointer)
 * Segmento de data (DS)   -- SI (Source Index)
-* Segmento de stack(ST)   -- SP,BP (Stack, base Pointer)
+* Segmento de stack(SS)   -- SP,BP (Stack, base Pointer)
 * Segmento extra(ES)      -- DI (Destination index)
 
 
@@ -37,7 +43,7 @@ de entrada y salida
 ## Unidad de ejecucion (EU)
 Procesa las instrucciones del CPU. esta conformada por la mayoria de sus registros generales, los registros indices y apuntadoes, los flags, la alu y la lógica de control que maneja todo el proceso para ejecutar todas las instrucciones.
 
-![Arqui 8086](/8086.png)
+![Arqui 8086](http://www.eeeguide.com/wp-content/uploads/2018/08/8086-Internal-Architecture.jpg)
 
 ## Registros del procesador 
 Los registros del procesador, se usan para contener los datos con que se estan trabajando puesto que el acceso a los registros es mas rapido que los accesos a memoria,
